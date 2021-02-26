@@ -1,0 +1,35 @@
+package br.com.caicai.implementacao;
+
+import br.com.caicai.modelo.Elevador;
+
+public class TesteElevador {
+
+	public static void main(String[] args) {
+
+		Elevador elevador = new Elevador();
+
+		elevador.configurar((short)10, (short)0, (byte)20);
+		//ou
+		/*elevador.configurar(
+		 * (short)10,
+		 * (short)0,
+			* (byte)20);
+		 * 
+		 */
+		elevador.preencherNome("Cai Cai Elevador");
+		System.out.println(elevador.exibirResumo());
+		elevador.subir();
+		elevador.entrar((byte)5);
+		elevador.subir();
+		elevador.sair((byte)2);
+		elevador.descer();
+		System.out.println(elevador.exibirResumo());
+		
+		
+				
+		
+		
+
+	}
+
+}

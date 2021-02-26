@@ -1,0 +1,15 @@
+package br.com.caicai.modelo;
+
+public class Elevador {
+
+	private String nome;
+	private short andarMaximo;
+	private short andarMinimo;
+	private short andarAtual;
+	private byte capacidadeMaxima;
+	private byte qtdePessoas;
+	
+	
+	
+	
+}

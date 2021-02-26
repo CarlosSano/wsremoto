@@ -1,0 +1,30 @@
+package br.com.ecommerce.principal;
+
+import br.com.ecommerce.modelo.Produto;
+
+public class CompilaProduto {
+
+	public static void main(String[] args) {
+
+		Produto produto = new Produto();
+		
+		produto.setAll(1, "Mouse", (float)200, (float)250, 6);
+		System.out.println("ID.............: " + produto.getId());
+		System.out.println("Descricao......: " + produto.getDescricao());
+		System.out.println("Valor de Compra: " + produto.getValorCompra());
+		System.out.println("Valor de Venda.: " + produto.getValorVenda());
+		System.out.println("Qtde disponível: " + produto.getQtde() + "\n ");
+		
+		//System.out.println(produto.getResumo() + "\n ");
+		
+		System.out.println(produto.verificarEstoque());
+		System.out.println("Total da compra................: R$ " + produto.getTotalCompra());
+		System.out.println("Valor de Venda com 10% de desconto: " + produto.getDesconto());
+		produto.ajustarValores((float)0.05);
+		System.out.println(produto.getResumo());
+		
+
+
+	}
+
+}

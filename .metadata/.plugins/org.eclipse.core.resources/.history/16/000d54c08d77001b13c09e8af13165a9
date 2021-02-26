@@ -1,0 +1,48 @@
+package br.com.caicai.modelo;
+
+public class Elevador {
+
+	private String nome;
+	private short andarMaximo;
+	private short andarMinimo;
+	private short andarAtual;
+	private byte capacidadeMaxima;
+	private byte qtdePessoas;
+	
+	public void configurar(short maximo, short minimo, byte capacidade) {
+		
+	}
+	
+	public void preencherNome(String param) {
+		
+	}
+
+	public void subir() {
+		
+	}
+	
+	public void descer() {
+		
+	}
+	
+	public void subir(byte andar) {
+		
+	}
+	
+	public String retornarNome() {
+		return nome;
+	}
+	
+	public String entrar(byte qtde) {
+		return 
+	}
+	
+	public String sair(byte qtde) {
+		
+	}
+	
+	public String exibirResumo() {
+		
+	}
+	
+}

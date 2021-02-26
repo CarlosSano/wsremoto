@@ -1,0 +1,26 @@
+package br.com.caicai.implementacao;
+
+import br.com.caicai.modelo.Elevador;
+
+public class TesteElevador {
+
+	public static void main(String[] args) {
+
+		Elevador objeto = new Elevador();
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

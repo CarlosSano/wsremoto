@@ -1,0 +1,45 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TipoPrimitivos {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Tipos primitivos de variaveis:
+		 * boolean: dado logico (true/false)
+		 * char...: 1 caracter (entre apostrofos/aspas simples)
+		 * 
+		 * ==== Inteiros ====
+		 * byte...: -127 ~ +128
+		 * short..: -32.000 ~ + 32.000
+		 * int....: -2T ~ +2T
+		 * long...: 9...
+		 * ==================
+		 * 
+		 * float..: poucas casas decimais
+		 * double.: maior exatidao nas casas decimais
+		 * 
+		 * 
+		 * 
+		 * Capturem: 
+		 * - qtd de computadores que existem no Itaú
+		 * - valor medio de cada computador
+		 * - Exibir o total
+		 * - Exibir o valor medio com 10% de desconto
+		 */
+		
+		int quantidade = Integer.parseInt(JOptionPane.showInputDialog("Digite a qtd. de Computador do Itaú: "));
+		float valor = Float.parseFloat(JOptionPane.showInputDialog("Digite o valor médio do computador: "));
+		float total = quantidade*valor;
+		float desconto = total*0.9;
+		
+		System.out.println("Qtd. de computadores do Itaú´: ");
+		System.out.println("Valor médio por computador: ");
+		System.out.println("Valor Total: R$" + total);
+		System.out.println("Valor Total com 10% de Desconto: R$" + desconto);
+		
+	}
+
+}

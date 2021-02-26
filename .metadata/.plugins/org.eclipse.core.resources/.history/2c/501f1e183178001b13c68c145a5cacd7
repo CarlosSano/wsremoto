@@ -1,0 +1,132 @@
+package br.com.ecommerce.modelo;
+
+/*
+ * Design Pattern - Compilado com as melhores praticas para desenvolvimento Orientado Objeto
+ * DTO (Data Transfer Object) // TO // Beans // Modelo
+ * Recomendações:
+ * 1) TODOS os atributos devem ser privados
+ * 2) CADA atributo deve possuir um metodo para inpute e outro metodo para output (get e set)
+ * 3) 
+ * 
+ */
+
+/*
+ * * getTotalCompra(): retorna o valorCompra multiplicado pelo quantidade
+
+ * getDesconto(): retorna o valor da venda com 10% de desconto.
+
+ * getResumo() : retorna a descricao, valor de venda e qtde
+
+ * setAll() : preenche todos
+
+ * verificarEstoque(): vai retornar
+"Estoque Alto" se a qtde for maior que 10
+"Estoque Baixo" se a qtde for menor que 5
+"Estoque Medio" se estiver entre 10 e 5
+
+ * ajustarValores(): vai aplicar a porcentagem recebida atualizando os valores de venda e compra.
+ */
+
+
+public class Produto {
+
+	private int id;
+	private String descricao;
+	private float valorCompra;
+	private float valorVenda;
+	private int qtde;
+
+	
+	//Source > Generate Getters e Setters... > Select All
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public float getValorCompra() {
+		return valorCompra;
+	}
+	public void setValorCompra(float valorCompra) {
+		this.valorCompra = valorCompra;
+	}
+	public float getValorVenda() {
+		return valorVenda;
+	}
+	public void setValorVenda(float valorVenda) {
+		this.valorVenda = valorVenda;
+	}
+	public int getQtde() {
+		return qtde;
+	}
+	public void setQtde(int qtde) {
+		this.qtde = qtde;
+	}
+
+	//getTotalCompra(): retorna o valorCompra multiplicado pelo quantidade
+	public float getTotalCompra() {
+
+		float total;
+		return total = valorCompra * qtde;
+	}
+
+	//getDesconto(): retorna o valor da venda com 10% de desconto.
+	public float getDesconto() {
+		return valorVenda*(float)0.9;
+		
+	}
+
+	//getResumo() : retorna a descricao, valor de venda e qtde
+	public String getResumo() {
+
+		return descricao = "Descricao: " + descricao + " | Valor Venda: " + valorVenda + " | Qtd:" + qtde;
+	}
+
+	//setAll() : preenche todos
+	public void setAll (int id, String descricao, float valorCompra, float valorVenda, int qtde) {
+
+		this.id = id;
+		this.descricao = descricao;
+		this.valorCompra = valorCompra;
+		this.valorVenda = valorVenda;
+		this.qtde = qtde;
+				
+	}
+	//* verificarEstoque(): vai retornar
+	//"Estoque Alto" se a qtde for maior que 10
+	//"Estoque Baixo" se a qtde for menor que 5
+	//"Estoque Medio" se estiver entre 10 e 5
+	public String verificarEstoque() {
+
+		if (qtde > 10) {
+			return "Estoque Alto: " + qtde;
+		} else if (qtde < 5) {
+			return "Estoque Baixo: " + qtde;
+		} else {
+			return "Estoque Medio: " + qtde;
+		}
+			
+	}
+	//* ajustarValores(): vai aplicar a porcentagem recebida atualizando os valores de venda e compra.
+	public void ajustarValores(float porcentagem) {
+
+		valorVenda = valorVenda * (1 - porcentagem);
+		valorCompra = valorCompra * (1 - porcentagem);
+		
+	}
+
+
+
+
+
+
+
+
+}

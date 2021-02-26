@@ -1,0 +1,24 @@
+package br.com.ecommerce.principal;
+
+import br.com.ecommerce.modelo.Produto;
+
+public class CompilaProduto {
+
+	public static void main(String[] args) {
+
+		Produto produto = new Produto();
+		
+		produto.setAll(1, "Mouse", (float)200, (float)250, 6);
+		
+		System.out.println(produto.verificarEstoque());
+		System.out.println(produto.getTotalCompra());
+		System.out.println(produto.getResumo());
+		
+		
+		
+		
+		
+
+	}
+
+}

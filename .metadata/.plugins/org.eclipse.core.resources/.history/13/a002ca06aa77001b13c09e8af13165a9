@@ -1,0 +1,25 @@
+package br.com.ecommerce.principal;
+
+import br.com.ecommerce.modelo.Produto;
+
+public class CompilaProduto {
+
+	public static void main(String[] args) {
+
+		Produto produto = new Produto();
+		
+		System.out.println(produto.verificarEstoque());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

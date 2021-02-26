@@ -1,0 +1,41 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposDados {
+
+//atalho main: digitar "main" e depois Crtl+Espaço
+	
+	public static void main(String[] args) {
+		/*
+		 * Alfanumerico: eh um dado que voce nao utiliza em operacoes aritmeticas.
+		 * CEP: 00010-009 -->  00010-009 (em que ele nao esteja entre os dados mais criticos)
+		 * 
+		 * Numerico: eh o dado que pode ser utilizado em operacoes aritmeticas e/ou for dado critico para pesquisa.
+		 * CEP: 00010-009 --> 1
+		 * (em um contexto dos Correios, onde ele eh um dado critico)
+		 * VARIAVEIS:
+		 * Inteiro = int
+		 * Real = double (casas decimais)
+		 * 
+		 * JOptionPane = caixa de entrada de dados
+		 * Source > Organize Imports
+		 * void = nao retorna nada
+		 * parse = converter em...
+		 */
+		
+		String nome = JOptionPane.showInputDialog("Digite o seu nome: ");
+		int idade = Integer.parseInt(JOptionPane.showInputDialog("Digite a sua idade: "));
+		double altura = 1.70;
+		System.out.println("Nome..: " + nome);
+		System.out.println("Idade.: " + idade + " anos");
+		System.out.println("Altura: " + altura + " m");
+		
+		
+	}
+	
+	
+	
+	
+	
+}

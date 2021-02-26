@@ -1,0 +1,89 @@
+package br.com.ecommerce.modelo;
+
+public class Cliente {
+
+	private int id;
+	private String nome;
+	private String email;
+	private String fone;
+
+	// CONSTRUTOR CHEIO
+	// Atalho: Source > Generate Constructor using Fields...
+	public Cliente(int id, String nome, String email, String fone) {
+
+		this.id = id;
+		this.nome = nome;
+		this.email = email;
+		this.fone = fone;
+
+	}
+
+	//CONSTRUTOR VAZIO
+	public Cliente() {
+
+	}
+
+
+	public String getAll() {
+
+		return "ID...: " + id + "\n" +
+				"Nome.: " + nome + "\n" +
+				"E-mai: " + email + "\n" +
+				"Fone.: " + fone + "\n"			
+				;
+	}
+
+
+	public void setAll(int id, String nome, String email, String fone) {
+
+	}
+
+	//deve retornar o susuario do email (conteú´do até´o @)
+	public String getUsuario() {
+
+		int posicao;
+		posicao = email.indexOf("@");
+
+		String semArroba;
+		semArroba = email.substring(0, posicao);
+
+		// ou
+		// email.substring(0,email.indexOf("@"))
+		if (email.contains("@")) {
+			return semArroba.toUpperCase();	
+		}
+		return email;
+
+	}
+
+
+
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getFone() {
+		return fone;
+	}
+	public void setFone(String fone) {
+		this.fone = fone;
+	}
+
+
+
+
+}

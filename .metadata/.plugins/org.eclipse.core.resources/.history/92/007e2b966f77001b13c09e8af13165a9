@@ -1,0 +1,27 @@
+package br.com.concessionaria.principal;
+
+import br.com.concessionaria.modelo.Carro;
+
+public class TesteCarro {
+
+	public static void main(String[] args) {
+		/*
+		 * Instanciar = preparar a memoria para receber o objeto
+		 */
+
+		//instanciando um objeto
+		Carro objeto = new Carro();
+		objeto.cor = "azul";
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

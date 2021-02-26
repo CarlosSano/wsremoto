@@ -1,0 +1,25 @@
+package br.com.concessionaria.modelo;
+
+public class Carro {
+
+	/*
+	 * As variaveis precisam ser construidas exatamente como declarado na Classe do UML
+	 * 
+	 */
+	
+	private float valor;
+	private String cor;
+	private boolean status;
+	private short velocidadeAtual;
+	private String modelo;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

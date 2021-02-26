@@ -1,0 +1,66 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DecisaoEncadeadaDesafio {
+
+	public static void main(String[] args) {
+		/*
+		 * Capturar:
+		 * nome do produto
+		 * genero do produto (alimenticio, eletronico...)
+		 * qtd
+		 * valor unitario
+		 * Voce devera calcular o imposto sobre o valor unitario
+		 * Se for alimenticio, o imposto sera de 5%
+		 * Se for eletronico, o imposto sera de 7%
+		 * Se a qtd for maior que 100, o imposto sera menor em 1%
+		 * Se a qtd estiver entre 50 e 100, o imposto sera menor em 0.5%
+		 * Se a qtd for menor que 50, o imposto sera integral
+		 * Exibir o valor unitario ja com o imposto.
+		 */
+
+		String produto = JOptionPane.showInputDialog("Digite o nome do produto");
+		short qtd = Short.parseShort(JOptionPane.showInputDialog("Digite a qtd"));
+		float valor = Float.parseFloat(JOptionPane.showInputDialog("Digite o valor unitario"));
+
+		if (produto == "alimento") {
+
+			float imp = (float)0.05;
+			float valort;
+			if (qtd >=50 && qtd <=100) {
+				valort = qtd*valor*(imp-(float)0.005);
+				System.out.println(produto + ": Valor unitario com imposto: "+ valort);	
+			} else if (qtd >  100) {
+				valort = qtd*valor*(imp-(float)0.01);
+				System.out.println(produto + ": Valor unitario com imposto: "+ valort);
+			} else {
+				valort = qtd*valor*imp;
+				System.out.println(produto + ": Valor unitario com imposto: "+ valort);
+			}
+
+		} else {
+
+
+			if (produto == "eletronico") {
+
+				float imp = (float)0.07;
+				float valort;
+				if (qtd >=50 && qtd <=100) {
+					valort = qtd*valor*(imp-(float)0.005);
+					System.out.println(produto + ": Valor unitario com imposto: "+ valort);	
+				} else if (qtd >  100) {
+					valort = qtd*valor*(imp-(float)0.01);
+					System.out.println(produto + ": Valor unitario com imposto: "+ valort);
+				} else {
+					valort = qtd*valor*imp;
+					System.out.println(produto + ": Valor unitario com imposto: "+ valort);
+				}
+
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package br.com.concessionaria.modelo;
+
+public class Carro {
+
+	/*
+	 * As variaveis precisam ser construidas exatamente como declarado na Classe do UML
+	 * 
+	 */
+	
+	private float valor;
+	private String cor;
+	private boolean status;
+	private short velocidadeAtual;
+	private String modelo;
+	
+	//sintaxe para os métodos
+	//<modificador> <tipo do retorno> <nome do metodo> (tipo de param) { }
+	public void preencherCor(String param) {
+		
+		cor = param;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

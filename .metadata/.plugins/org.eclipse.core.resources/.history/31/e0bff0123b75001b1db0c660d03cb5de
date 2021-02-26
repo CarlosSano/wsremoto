@@ -1,0 +1,35 @@
+package variaveis;
+
+public class TiposDados {
+
+//atalho main: digitar "main" e depois Crtl+Espaço
+	
+	public static void main(String[] args) {
+		/*
+		 * Alfanumerico: eh um dado que voce nao utiliza em operacoes aritmeticas.
+		 * CEP: 00010-009 -->  00010-009 (em que ele nao esteja entre os dados mais criticos)
+		 * 
+		 * Numerico: eh o dado que pode ser utilizado em operacoes aritmeticas e/ou for dado critico para pesquisa.
+		 * CEP: 00010-009 --> 1
+		 * (em um contexto dos Correios, onde ele eh um dado critico)
+		 * VARIAVEIS:
+		 * Inteiro = int
+		 * Real = double (casas decimais)
+		 * 
+		 */
+		
+		String nome = "Carlos Sano";
+		int idade = 40;
+		double altura = 1.70;
+		System.out.print(nome);
+		System.out.print(idade);
+		System.out.print(altura);
+		
+		
+	}
+	
+	
+	
+	
+	
+}

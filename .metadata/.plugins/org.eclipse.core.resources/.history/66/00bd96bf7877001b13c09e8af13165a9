@@ -1,0 +1,77 @@
+package br.com.concessionaria.modelo;
+
+public class Carro {
+
+	/*
+	 * As variaveis precisam ser construidas exatamente como declarado na Classe do UML
+	 * 
+	 */
+
+	private float valor;
+	private String cor;
+	private boolean status;
+	private short velocidadeAtual;
+	private String modelo;
+
+	public String retornaCor() {
+		return cor;
+	}
+
+	//sintaxe para os métodos
+	//<modificador> <tipo do retorno> <nome do metodo> (tipo de param) { }
+	public void preencherCor(String param) {
+		cor = param.toUpperCase();
+
+	}
+
+
+	public float retornaValor() {
+		return valor;
+	}
+
+	public void preencherValor(float param) {
+		valor = param;
+	}
+
+
+	public void ligar() {
+		status = true;
+	}
+
+	public void desligar() {
+		status = false;
+		velocidadeAtual = 0;
+	}
+
+
+	public void acelerar (short velocidade) {
+
+		if (status == true) {
+			velocidadeAtual = velocidade;	
+		}
+
+	}
+
+	public void brecar(short velocidade) {
+
+		if (status == true) {
+			velocidadeAtual = 0;	
+		}
+	}
+
+
+	public String retornarResumo() {
+		return modelo + status + velocidadeAtual;
+
+	}
+
+
+
+
+
+
+
+
+}
+
+

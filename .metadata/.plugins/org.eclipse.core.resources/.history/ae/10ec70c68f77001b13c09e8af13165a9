@@ -1,0 +1,75 @@
+package br.com.caicai.modelo;
+
+public class Elevador {
+
+	private String nome;
+	private short andarMaximo;
+	private short andarMinimo;
+	private short andarAtual;
+	private byte capacidadeMaxima;
+	private byte qtdePessoas;
+	
+	//devera preencher os atributos andarMaximo, andarMinimo e capacidadeMaxima
+	//com os parametro recebidos respectivamente.
+	public void configurar(short maximo, short minimo, byte capacidade) {
+		
+		if (maximo != 0 || minimo >=0 || capacidade != 0 ) {
+			
+		}
+		
+		andarMaximo = maximo;
+		andarMinimo = minimo;
+		capacidadeMaxima = capacidade;
+		
+	}
+	
+	public void preencherNome(String param) {
+		
+	}
+
+	//o andarAtual devera ser incrementado em 1 somente se o andarAtual nao for igual
+	//ao andarMaximo
+	public void subir() {
+		
+		if (andarAtual < andarMaximo) {
+			
+			int contador = andarAtual;
+			for (contador, contador < andarMaximo, contador++) {
+				
+			}
+		}
+		
+	}
+	
+	//o andarAtual devera ser decrementado em 1 somente se o andarAtual nao for igual
+	//ao andarMinimo
+	public void descer() {
+		
+	}
+	
+	//devera acrescentar ao andarAtual o parametro recebido, desde que nao exceda o andarMaximo.
+	public void subir(byte andar) {
+		
+	}
+	
+	public String retornarNome() {
+		return nome;
+	}
+	
+	//devera acrescentar o valor recebido no atributo qtdePessos, desde que nãõ exceda a capacidade maxima.
+	public String entrar(byte qtde) {
+		return 
+	}
+	
+	
+	//devera remover o valor recebido do atributo qtdePessoas, desde que nao seja menor que 0.
+	public String sair(byte qtde) {
+		
+	}
+	
+	//deve exibir: andarAtual, qtdePEssoas e o nome do elevador.
+	public String exibirResumo() {
+		
+	}
+	
+}
